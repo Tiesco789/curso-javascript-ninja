@@ -112,3 +112,6 @@ console.log(convertToHex('blue'));
 console.log(convertToHex('green'));
 console.log(convertToHex('orange'));
 console.log(convertToHex('yellow'));
+console.log(convertToHex('cyan'));
+console.log(convertToHex('magenta'));
+console.log(convertToHex('brown'));
