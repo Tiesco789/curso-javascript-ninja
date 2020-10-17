@@ -1,17 +1,18 @@
-// # Desafio da semana #2
+// ! # Desafio da semana #2
 
-// Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções!
+// Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções! :smile:
 
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-function myFunction(a, b) {
-  return a + b;
+function soma(x, y) {
+  return x + y;
 }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-let myVar = myFunction(2, 2 + 5);
+let myVar = soma(2, 3 + 5);
+console.log(myVar);
 
 // Qual o valor atualizado dessa variável?
-9;
+10;
 
 // Declare uma nova variável, sem valor.
 let test;
@@ -21,16 +22,18 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-function testes() {
+function addValor() {
   test = 'outro valor';
-  return `O valor da variável agora é ${test}`;
+  return `o valor da variável agora é ${test}`;
 }
 
 // Invoque a função criada acima.
-testes();
+addValor();
 
 // Qual o retorno da função? (Use comentários de bloco).
-// 'O valor da variável agora é outro valor'
+/**
+ * o valor da variável agora é outro valor
+ */
 
 /*
 Crie uma função com as seguintes características:
@@ -39,24 +42,25 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-function triArgs(a, b, c) {
-  if (a === undefined || b === undefined || c === undefined) {
-    return 'Preencha os dados corretamente';
+function otherFunc(x, y, z) {
+  if (x === undefined || y === undefined || z === undefined) {
+    return 'Preencha todos os valores corretamente!';
   }
-  return a * b * c + 2;
+
+  return x * y * z + 2;
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-triArgs(3, 3);
+otherFunc(3, 5);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-// "Preencha os dados corretamente"
+// * Preencha todos os valores corretamente!
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-triArgs(3, 3, 3);
+otherFunc(3, 5, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-// 29
+// * 32
 
 /*
 Crie uma função com as seguintes características:
@@ -67,20 +71,20 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-function manyArgs(a, b, c) {
-  if (a !== undefined && b === undefined && c === undefined) {
-    return a;
+function manyArgs(x, y, z) {
+  if (x !== undefined && y === undefined && z === undefined) {
+    return x;
   }
 
-  if (a !== undefined && b !== undefined && c === undefined) {
-    return a + b;
+  if (x !== undefined && y !== undefined && z === undefined) {
+    return x + y;
   }
 
-  if (a !== undefined && b !== undefined && c !== undefined) {
-    return (a + b) / c;
+  if (x !== undefined && y !== undefined && z !== undefined) {
+    return (x + y) / z;
   }
 
-  if (a === undefined && b === undefined && c === undefined) {
+  if (x === undefined && y === undefined && z === undefined) {
     return false;
   }
 
@@ -88,8 +92,9 @@ function manyArgs(a, b, c) {
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-manyArgs(); // false
-manyArgs(1); // 1
-manyArgs(1, 2); // 3
-manyArgs(1, 2, 4); // 0.75
-manyArgs(null); // null
+
+console.log(manyArgs()); // false
+console.log(manyArgs(5)); // 5
+console.log(manyArgs(5, 2)); // 7
+console.log(manyArgs(5, 3, 4)); // 2
+console.log(manyArgs(null)); // null

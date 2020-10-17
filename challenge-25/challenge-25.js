@@ -1,6 +1,6 @@
 /*
 Essa semana você terá dois desafios:
-1) Revisar todo o contéudo passado até aqui, e ver se você realmente entendeu
+1) Revisar todo o conteúdo passado até aqui, e ver se você realmente entendeu
 tudo o que foi passado! Se tiver dúvidas, anote, e então abra issues,
 ou comente no seu pull request mesmo, que eu irei ajudá-lo a entender
 o que não ficou tão claro das aulas anteriores.
