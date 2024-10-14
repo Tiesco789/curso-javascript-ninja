@@ -72,16 +72,21 @@ Crie uma função com as seguintes características:
 */
 function anotherThreeArgs (a, b, c) {
   if (a !== undefined && b === undefined && c === undefined ) {
-    return a;
+    console.log(a);
   } else if (a !== undefined && b !== undefined && c === undefined) {
-    return a + b;
+    console.log(a + b);
   } else if (a !== undefined && b !== undefined && c !== undefined) {
-    return (a + b) / c;
+    console.log((a + b) / c);
   } else if (a === undefined && b === undefined && c === undefined) {
-    return false
+    console.log(false);
   } else {
-    return null
+    console.log(null);
   }
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+anotherThreeArgs(1);
+anotherThreeArgs(2, 3);
+anotherThreeArgs(3, 4, 5);
+anotherThreeArgs();
+anotherThreeArgs();
